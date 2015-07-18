@@ -30,25 +30,29 @@ header {
 
 nav {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    width: 100%;
   li {
     flex: 1;
-    border-right: 1px solid green;
+    transition: flex-grow 400ms ease;
+    &:hover {
+      flex-grow: 3;
+    }
   }
 }
 
-.red {
-  background-color: red;
+#about {
+  background-color: lighten(#333, 0%);
 }
 
-.green {
-  background-color: green;
+#work {
+  background-color: lighten(#333, 25%);
 }
 
-.blue {
-  background-color: blue;
+#resume {
+  background-color: lighten(#333, 50%);
 }
 
-.orange {
-  background-color: orange;
+#contact {
+  background-color: lighten(#333, 75%);
 }
