@@ -59,7 +59,7 @@ html, body {
 header {
   flex: 1;
   display: flex;
-  align-self: center;
+  align-items: center;
   background: url("https://download.unsplash.com/photo-1424746219973-8fe3bd07d8e3") center;
   background-size: cover; }
   header div {
