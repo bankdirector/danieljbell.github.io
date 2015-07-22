@@ -14,3 +14,23 @@ $dark: #333;
   	@media (max-width: 1024px) { @content; }
   }
 }
+
+@font-face {
+  font-family: 'JosefinSans-Thin';
+  src: url('../font/JosefinSans-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'JosefinSans-ThinItalic';
+  src: url('../font/JosefinSans-ThinItalic.ttf');
+}
+
+@font-face {
+  font-family: 'JosefinSans-Bold';
+  src: url('../font/JosefinSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'JosefinSans-BoldItalic';
+  src: url('../font/JosefinSans-BoldItalic.ttf');
+}
