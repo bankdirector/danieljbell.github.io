@@ -1,5 +1,5 @@
-@import 'reset.scss';
-@import 'config.scss';
+@import 'reset',
+        'config';
 
 * {
   box-sizing: border-box;
@@ -39,8 +39,33 @@ nav {
   li {
     flex: 1;
     transition: flex-grow 400ms ease;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    a {
+      flex: 1;
+      color: lighten($dark, 50%);
+      text-decoration: none;
+      text-transform: uppercase;
+      svg {
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+        padding-bottom: 15px;
+        fill: lighten($dark, 50%);
+      }
+    }
     &:hover {
       flex-grow: 3;
+      a {
+        transition: fill 400ms ease;
+        color: #fff;
+        svg {
+          
+          fill: #fff;
+        } 
+      }
     }
   }
 }
@@ -50,13 +75,13 @@ nav {
 }
 
 #work {
-  background-color: lighten(#333, 25%);
+  background-color: lighten(#333, 20%);
 }
 
 #resume {
-  background-color: lighten(#333, 50%);
+  background-color: lighten(#333, 40%);
 }
 
 #contact {
-  background-color: lighten(#333, 75%);
+  background-color: lighten(#333, 60%);
 }
