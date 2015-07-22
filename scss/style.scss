@@ -55,12 +55,10 @@ nav {
     svg {
       flex: 1;
       width: 40%;
-      margin-bottom: -100px;
       fill: lighten($dark, 50%);
     }
     p {
       flex: 1;
-      margin-top: -100px;
     }
     &:hover {
     flex-grow: 3;
@@ -80,13 +78,13 @@ nav {
 }
 
 #work {
-  background-color: lighten(#333, 20%);
+  background-color: lighten(#333, 15%);
 }
 
 #resume {
-  background-color: lighten(#333, 40%);
+  background-color: lighten(#333, 30%);
 }
 
 #contact {
-  background-color: lighten(#333, 60%);
+  background-color: lighten(#333, 45%);
 }
