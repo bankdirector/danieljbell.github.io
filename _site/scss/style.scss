@@ -1,0 +1,90 @@
+@import 'reset',
+        'config';
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: 'JosefinSans-Bold', sans-serif;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  min-height: 100%;
+}
+
+header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  background: url('../img/bg.jpg') center;
+  background-size: cover;
+  div {
+    flex: 1;
+    text-align: center;
+    background-color: rgba(0,0,0,.75);
+    color: #fff;
+  }
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  @include bp(phone) {
+    flex-direction: column;
+  }
+  a {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: lighten($dark, 50%);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 36px;
+    transition: flex-grow 400ms ease;
+    li {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    svg {
+      flex: 1;
+      width: 40%;
+      fill: lighten($dark, 50%);
+    }
+    p {
+      flex: 1;
+    }
+    &:hover {
+    flex-grow: 3;
+    li {
+      transition: fill 400ms ease;
+      color: #fff; 
+    }
+    svg {
+      fill: #fff;
+    }
+  }
+  }
+}
+
+#about {
+  background-color: lighten(#333, 0%);
+}
+
+#work {
+  background-color: lighten(#333, 15%);
+}
+
+#resume {
+  background-color: lighten(#333, 30%);
+}
+
+#contact {
+  background-color: lighten(#333, 45%);
+}

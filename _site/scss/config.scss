@@ -1,0 +1,36 @@
+$dark: #333;
+
+@mixin bp($point) {
+  @if $point == phone2 {
+    @media (max-width: 320px) { @content; }
+  } 
+  @else if $point == phone {
+    @media (max-width: 640px) { @content; }
+  }
+  @else if $point == tab2 {
+    @media (max-width: 768px) { @content; }
+  }
+  @else if $point == tab {
+  	@media (max-width: 1024px) { @content; }
+  }
+}
+
+@font-face {
+  font-family: 'JosefinSans-Thin';
+  src: url('../font/JosefinSans-Thin.ttf');
+}
+
+@font-face {
+  font-family: 'JosefinSans-ThinItalic';
+  src: url('../font/JosefinSans-ThinItalic.ttf');
+}
+
+@font-face {
+  font-family: 'JosefinSans-Bold';
+  src: url('../font/JosefinSans-Bold.ttf');
+}
+
+@font-face {
+  font-family: 'JosefinSans-BoldItalic';
+  src: url('../font/JosefinSans-BoldItalic.ttf');
+}
